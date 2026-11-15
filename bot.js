@@ -4,8 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 // ១. ការកំណត់រចនាសម្ព័ន្ធ Bot (ទាញយកពី Environment Variables របស់ Render)
-const BOT_TOKEN = process.env.BOT_TOKEN || '9073859818:AAHmR9hznAuewrPPgVRp-lKkG--EU-9nkfk
-';
+const BOT_TOKEN = process.env.BOT_TOKEN || '9073859818:AAHmR9hznAuewrPPgVRp-lKkG--EU-9nkfk;
 const ADMIN_ID = Number(process.env.ADMIN_ID) || 8874434128; // Telegram ID របស់អ្នក
 
 const bot = new Telegraf(BOT_TOKEN);
